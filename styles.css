@@ -42,11 +42,11 @@ h1, h2 {
 }
 
 #screen1 h1 {
-    font-size: 140px; /* Adjust font size as needed */
+    font-size: 6vh; /* Adjust font size as needed */
 }
 
 #screen1 h2 {
-    font-size: 60px; /* Adjust font size as needed */
+    font-size: 4vh; /* Adjust font size as needed */
     color: #bca494; /* Color h2 */
 }
 
@@ -57,7 +57,7 @@ h1, h2 {
 #screen1 img,
 #screen2 img {
     margin-top: 20px; /* Adjust as needed */
-    width: 350px;
+    width: 13%;
     height: auto;
 }
 
