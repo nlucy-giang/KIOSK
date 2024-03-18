@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'League Spartan';
     src: url('FONTS/League-Spartan/leaguespartan-bold.eot');
@@ -248,21 +249,21 @@ button:nth-child(2) {
     margin-top: -130px;
 }
 
-#screen9 .button {
+#screen9 .roomcheckbutton {
     background-color: #faf3eb;
     border-radius: 20px;
     padding: 20px;
     margin-top: 82px;
     height: 240px;
-    color: black;
-    font-size: 43px;
+    color: #445464;
+    font-size: 53px;
 }
 
 #screen9 .column {
   justify-content: space-between;
 }
 
-#screen9 .button p {
+#screen9 .roomcheckbutton p {
     margin: 5px 0;
 }
 
@@ -545,10 +546,11 @@ button:nth-child(2) {
 }
 
 #screen7 h1, #screen7 p {
-  color: black;
+  color: #445464;
   position: absolute;
   font-size: 40px;
   z-index: 100;
+  text-align: center;
 }
 
 #screen7 .chxbuttons {
@@ -607,6 +609,7 @@ button:nth-child(2) {
     max-width: 100px; /* Adjust image size as needed */
     margin-top: 20px;
 }
+
 
 #screen7 .modal-content button {
     margin-top: 20px;
@@ -747,26 +750,29 @@ button:nth-child(2) {
    left: 50%;
    top: 50%;
    transform: translate(-50%, -50%);
-   width: 50%; /* Adjust as needed */
-   max-width: 500px; /* Maximum width of the modal */
+   width: 800px; /* Maximum width of the modal */
+   height: 800px; /* Maximum width of the modal */
    background-color: #445464;
    border-radius: 20px;
    padding: 20px;
    text-align: center;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
    z-index: 99;
+   font-size: 50px;
 }
-
+/* go back and fix?
 #screen5 .modal-overlay {
     display: none;
     position: fixed;
-    z-index: 9998; /* Ensure it appears below the modal */
+    z-index: 9998;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    background-color: rgba(0, 0, 0, 0.5);
 }
+*/
+
 
 #screen5 .modal-content {
     background-color: #445464;
