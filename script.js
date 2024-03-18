@@ -221,6 +221,7 @@ function setUpModal(roomNumber) {
     var yesButton = document.createElement("button");
     yesButton.textContent = "Yes";
     yesButton.setAttribute("id", "yesButton" + roomNumber);
+    yesButton.classList.add("yesnoButtonClass");
     bookinfoelem.appendChild(yesButton);
     yesButton.addEventListener("click", function() {
         // Retrieve the start and end time for the selected room
@@ -237,6 +238,7 @@ function setUpModal(roomNumber) {
           const confirmModal = document.getElementById("confirmModal");
           confirmModal.style.display = "block";
           console.log(bookedRooms);
+          if (endTime) { //asdasdasd
           document.querySelectorAll("#screen9 .rounded-box").forEach(function(box, index) {
               // Clear the existing content of the rounded boxes
               box.innerHTML = '';
@@ -251,14 +253,11 @@ function setUpModal(roomNumber) {
                   // Create buttons for available now rooms
                   availableNowRooms.forEach(function(booking) {
                       var button = createRoomButton(booking);
-                      if (button !== null) {
                         // button.classList.add();
                         box.appendChild(button);
                         button.addEventListener('click', function() {
                             showScreen("screen7");
                         });
-                      }
-
                   });
               } else if (index === 1) {
                   // Filter rooms not available now (available later)
@@ -279,6 +278,7 @@ function setUpModal(roomNumber) {
                   });
               }
           });
+        }
         } else if (success === 1){
             const modal = document.getElementById("bookModal" + roomNumber);
             modal.style.display = "none";
@@ -295,7 +295,7 @@ function setUpModal(roomNumber) {
     });
     var noButton = document.createElement("button");
     noButton.textContent = "No";
-    noButton.classList.add("noButtonClass");
+    noButton.classList.add("yesnoButtonClass");
     noButton.setAttribute("id", "noButton" + roomNumber);
     noButton.addEventListener("click", function() {
         // Hide the book modal
@@ -586,9 +586,10 @@ closeButtonEmpty.addEventListener("click", function() {
     function createRoomButton(booking) {
       if (booking.endTime !== null) {
         var button = document.createElement("div");
-        button.classList.add("button");
+        button.classList.add("roomcheckbutton");
         console.log(booking.room.name);
-        button.textContent = `${booking.room.name} - ${booking.startTime} - ${booking.endTime} - ${booking.date}`;
+        button.style.whiteSpace = "pre-line";
+        button.textContent = `${booking.room.name}\n\n${booking.date}\n${booking.startTime} to ${booking.endTime} `;
         return button;
       }
       return null;
