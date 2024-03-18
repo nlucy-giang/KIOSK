@@ -792,7 +792,8 @@ function bookRoom(room, startTime, endTime, date) {
       var booking = new Booking(room, startTime, endTime, date);
       // Add the booking to the bookedRooms array
       bookedRooms.push(booking);
-      var bookingDetails = `${startTime} to ${endTime} - ${date}`;
+      document.getElementById("roomdetails").style.whiteSpace = "pre-line";
+      var bookingDetails = `${date}\n${startTime} to ${endTime}`;
       document.getElementById("roomheader").textContent = room.name;
       document.getElementById("roomdetails").textContent = bookingDetails;
       return isBooked;
