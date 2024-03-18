@@ -160,12 +160,12 @@ button:nth-child(2) {
   overflow: hidden;
 }
 
-#screen9 .rectangle,
-#screen7 .rectangle {
+#screen9 .rectangle {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 #screen9 .column {
     display: flex;
@@ -518,6 +518,21 @@ button:nth-child(2) {
     cursor: pointer;
 }
 
+#screen7 .rectangle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10%; /* Adjust top margin as needed */
+  padding-left: 1120px;
+  width: 60%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 0px;
+  height: 90%;
+  background-color: #5c7c8c;
+  flex-direction: column;
+}
+
 #screen7 .rectangle2 {
   position: absolute;
   top: 10%; /* Adjust top margin as needed */
@@ -529,41 +544,47 @@ button:nth-child(2) {
   z-index: 1;
 }
 
+#screen7 .rectangle .roomheader {
+  font-size:120px;
+
+}
+
 #screen7 .rectangle2 img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 500px;
+    height: 500px;
     display: block;
     margin: auto;
 }
 
 #screen7 .rectangle2 #studyroom {
-    max-width: 60%;
-    max-height: 60%;
+  width: 700px;
+  height: 700px;
     display: block;
     margin: auto;
-    margin-bottom: 5px;
+    margin-bottom: 55px;
     margin-top: 100px;
 }
 
+#screen7 h1 {
+  padding-bottom: 300px;
+}
+
 #screen7 h1, #screen7 p {
-  color: #445464;
+  color: #faf3eb;
   position: absolute;
-  font-size: 40px;
+  font-size: 70px;
   z-index: 100;
   text-align: center;
 }
 
 #screen7 .chxbuttons {
-  margin-top:30vh;
+  margin-top:50vh;
 }
 
 #screen7 .chxbuttons button {
     display: block;
     width: 500px;
     height: 150px;
-    margin-bottom: 10px; /* Adjust the spacing between buttons */
-    margin-top: 10px;
-    margin-left: 80vh;
     border-radius: 15px;
     font-size: calc(1vw + 1vh);
     color: #445464;
