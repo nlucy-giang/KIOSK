@@ -51,7 +51,7 @@ h1, h2 {
 }
 
 #screen2 h1 {
-    font-size: 140px; /* Adjust font size as needed */
+    font-size: 6vh; /* Adjust font size as needed */
 }
 
 #screen1 img,
@@ -69,21 +69,21 @@ h1, h2 {
 }
 
 #screen3 h1{
-    font-size: 140px;
+    font-size: 10vh;
 }
 
 #screen3 .screen3-button{
-  font-size: 80px;
-    width: 600px;
-    height: 200px;
+  font-size: 4vh;
+    width: 53vh;
+    height: 12vh;
     border-radius: 60px;
 }
 
 #backButton {
     position: absolute;
     top: 11px; /* Adjust top position as needed */
-    left: -31px; /* Adjust left position as needed */
-    font-size: 95px;
+    left: 1%; /* Adjust left position as needed */
+    font-size: 5vh;
     color: #faf3eb;
     background-color: transparent;
     padding: 15px 30px;
@@ -103,29 +103,30 @@ h1, h2 {
 
 #screen4 .buttons{
     padding-top: 165px;
+    width: 53vh;
+    height: 12vh;
+    padding-bottom: 19vh;
 }
 
 #screen4 .wide-button{
-  font-size: 80px;
-  width: 600px;
-  height: 200px;
+  font-size: 90%;
+  width: 53vh;
+  height: 12vh;
   border-radius: 60px;
-  }
+}
 
   #screen4 #viewbtn{
-    font-size: 65px;
+    font-size: 90%;
   }
 
 button {
     display: block;
-    width: 400px; /* Adjust button width as needed */
-    height: 100px;
-    padding: 15px 30px; /* Adjust button padding for a larger size */
-    margin: 10px auto;
+
+    padding: 1vh 2vh; /* Adjust button padding for a larger size */
     border: none;
-    border-radius: 50px;
+    border-radius: 60px;
     cursor: pointer;
-    font-size: 45px;
+    font-size: 90%;
     font-family: 'League Spartan', sans-serif;
 }
 
