@@ -166,6 +166,10 @@ h1, h2 {
   }
 
 button {
+  font-family: 'League Spartan', sans-serif;
+}
+#screen3 button,
+#screen4 button {
     display: block;
 
     padding: 1vh 2vh; /* Adjust button padding for a larger size */
@@ -176,12 +180,14 @@ button {
     font-family: 'League Spartan', sans-serif;
 }
 
-button:nth-child(1) {
+#screen3 button,
+#screen4 button {
     background-color: #faf3eb;
     color: #445464;
 }
 
-button:nth-child(2) {
+#screen3 button,
+#screen4 button {
     margin-top: 30px;
     background-color: #bca494;
     color: #445464;
@@ -323,9 +329,6 @@ button:nth-child(2) {
   margin-top: ;
 }
 /* ---------------------------------------------------------------------------*/
-#screen5 #free {
-  margin-left: 7px;
-}
 #screen5 .navigation-tab {
     background-color: #445464;
     display: flex;
@@ -335,29 +338,18 @@ button:nth-child(2) {
     top: 0;
     left: 0;
     width: 100%;
-    height: 5%;
-    padding: 10px 20px;
+    height: 12%; /* Changed height to 7% */
     z-index: 999; /* Ensure it appears above other content */
-}
-
-#screen5 #backButton2,
-#screen5 #dateSelector,
-#screen5 #filterButton,
-#screen5 #homeButton {
-    color: #faf3eb;
-    background-color: transparent;
-    top: 11px; /* Adjust top position as needed */
-    font-size: 65px;
-    color: #faf3eb;
-    border: none;
-    cursor: pointer;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+    padding: 10px 20px;
 }
 
 #screen5 ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 93%; /* Adjusted to accommodate the width of items */
+    max-width: 93%; /* Added max-width to ensure items don't exceed navigation width */
     margin: 0;
     padding: 0;
 }
@@ -365,87 +357,43 @@ button:nth-child(2) {
 #screen5 .navigation-tab li {
     list-style-type: none;
 }
-#screen5 #backButton2 {
-  position: absolute;
-    order: 1;
-    top: 30px; /* Adjust top position as needed */
+
+#screen5 button {
+    color: #faf3eb;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px; /* Adjusted font size for buttons */
 }
 
 #screen5 #dateSelector {
-  position: absolute;
-    order: 2;
-    top: -8px;
-    right: 35%;
-    height: 40px;
-    margin-top: 70px;
+    display: flex;
+    align-items: center;
 }
 
-
-#screen5 #dateSelector #dateSelect{
-  width: 580px;
-  height 50px;
-  font-size: 70px;
-  padding: 0px;
-  align-items: center;
-  color: #c4b4a4;
-}
-
-
-#screen5 #filterButton img,
-#screen5 #homeButton img {
-  margin-top: 50px;
-  width: 160px;
-}
-#screen5 #filterButton {
-  position: absolute;
-    order: 3;
-    top: -42px;
-    right: 495px;
-}
-
-#screen5 #dateSelector #prevDate,
-#screen5 #dateSelector #nextDate {
-  width: 80px;
-  height: 10px;
-  font-size: 100px;
-  color: #c4b4a4;
-  padding: 0;
-}
-
-#screen5 #homeButton {
-  position: absolute;
-    order: 4;
-    top: -42px;
-    right: -30px;
+#screen5 #dateSelector button {
+    font-size: 14px; /* Adjusted font size for date selector buttons */
 }
 
 #screen5 .status-item {
     display: flex;
-    align-items: center; /* Vertically center the content */
-    justify-content: center; /* Horizontally center the content */ /* Adjust as needed */
-    position: relative;
-    left: -710px;
-    top: 30px;
-    margin-bottom: 8px;
-    margin-top: 10px;
+    align-items: center;
 }
 
 #screen5 .status-item p {
-  margin-right: 15px;
-  margin-top: 15px;
-  margin-bottom: 0px;
-  font-size: 20px;
-  color: #fbf3eb;
-}
-
-#screen5 #free {
-  margin-left: 17px;
+    margin: 0 10px; /* Adjusted margin for paragraph */
+    font-size: 14px; /* Adjusted font size */
+    color: #faf3eb;
 }
 
 #screen5 .status-item img {
-    margin-right: 10px;
-    vertical-align: middle;
-    width: 30px;
+    margin-right: 5px; /* Adjusted margin for image */
+    width: 20px; /* Adjusted width for image */
+}
+
+#screen5 #filterButton img,
+#screen5 #homeButton img {
+    width: 20px; /* Adjusted width for filter and home button images */
 }
 
 /* ---------------------------------------------------------------------------*/
