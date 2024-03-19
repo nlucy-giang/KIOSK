@@ -331,15 +331,16 @@ button:nth-child(2) {
     height: 8%; /* Changed height to 7% */
     z-index: 999; /* Ensure it appears above other content */
     box-sizing: border-box; /* Ensure padding and border are included in width */
-    padding: 10px 20px;
+    padding: 47px 20px;
 }
 
 #screen5 ul {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 77%; /* Adjusted to accommodate the width of items */
-    max-width: 90%; /* Added max-width to ensure items don't exceed navigation width */
+    width: 100%; /* Adjusted to accommodate the width of items */
+    max-width: 100%; /* Added max-width to ensure items don't exceed navigation width */
     margin: 0;
     padding: 0;
 }
@@ -623,7 +624,7 @@ button:nth-child(2) {
 #screen5 #dropdownicon {
   width: 120px;
   height: 90px;
-  padding-left: 1800px;
+  padding-left: 1200px;
 }
 
 #screen5 .hidden {
@@ -869,7 +870,7 @@ button:nth-child(2) {
   color: #fbf3eb;
 }
 
-
+/* ------------------------------------------------------------------*/
 #screen6 {
     overflow: hidden;
 }
